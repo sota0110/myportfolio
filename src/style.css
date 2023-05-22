@@ -3,14 +3,21 @@
     padding: 0;
     list-style: none;
     color: black;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
 }
 
 header{
-    background-color: rgba(217, 255, 240, 0.4);
-    height: 50px;
+    background-color: rgba(217, 255, 240, 0.7);
+    height: 80px;
     position: fixed;
     width: 100%;
     z-index: 100;
+}
+
+header img{
+    width: 80px;
+    padding: 20px 50px;
 }
 
 header ul{
@@ -22,13 +29,17 @@ header li{
     font-size: 16px;
     float: left;
     margin-left: 30px;
-    line-height: 50px;
+    line-height: 80px;
     opacity: 0.8;
 }
 
 .container{
     text-align: center;
-    padding-top: 50px;
+}
+
+.head{
+    height: 80px;
+    background-color: rgb(217, 255, 240);
 }
 
 .top{
@@ -38,49 +49,60 @@ header li{
 .top p{
     position: absolute;
     top: 300px;
-    left: 805px;
-    font-size: 40px;
+    left: 770px;
+    font-size: 50px;
+    color: #e1e1e1;
+    list-style: 100px;
     z-index: 10;
-}
-
-.top p span{
-    color: #fff;
 }
 
 .top img{
     position: relative;
-    width: 70%;
+    width: 100%;
 }
 
 .title{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .card{
     background-color: rgba(173, 187, 181, 0.1);
     width: 80%;
-    height: 100px;
+    height: 150px;
+    line-height: 35px;
+    padding-top: 10px;
     margin: auto;
 }
 
 .left-card{
     float: left;
-    width: 30%;
+    width: 50%;
 }
 
 .right-card{
     float: left;
-    width: 70%;
+    text-align: left;
+    width: 50%;
 }
 
 a{
     text-decoration:none;
 }
 
+.works{
+    background-color: rgba(217, 255, 240, 0.4);
+}
+
 footer{
     background-color: rgba(217, 255, 240, 0.4);
-    height: 300px;
+    height: 200px;
+}
+
+footer h1{
+    font-size: 100px;
+    line-height: 200px;
+    text-align: center;
 }
 
 .mb-50{
