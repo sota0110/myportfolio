@@ -1,0 +1,13 @@
+.work-wrapper img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.work-wrapper{
+    width: 30%;
+    margin: 20px 20px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
