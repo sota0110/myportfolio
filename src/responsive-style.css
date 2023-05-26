@@ -9,10 +9,24 @@
     .br-1000{
         display: none;
     }
+
+    .br-1000-rm-530{
+        display: none;
+    }
 }
 
 @media (min-width: 670px) {
     .br-670{
+        display: none;
+    }
+
+    .br-670-rm-530{
+        display: none;
+    }
+}
+
+@media (min-width: 530px) {
+    .br-530{
         display: none;
     }
 }
@@ -59,16 +73,16 @@
         opacity: 1;
     }
 
-    .menu{
-        margin: 5px 30%;
-    }
-
     .hamburger{
         display: block;
     }
 
     .header-1000{
         display: none;
+    }
+
+    .menu{
+        margin: 5px 30%;
     }
 }
 
@@ -79,15 +93,39 @@
 
     .top p{
         top: 200px;
-        right: 30px;
+        right: 20px;
         font-size: 30px;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 530px) {
     .top p{
         top: 180px;
         right: 10px;
         font-size: 25px;
+    }
+
+    .menu{
+        margin: 5px 20%;
+    }
+
+    .br-1000-rm-530{
+        display: none;
+    }
+
+    .br-670-rm-530{
+        display: none;
+    }
+
+    .card{
+        width: 95%;
+    }
+}
+
+@media (max-width: 450px) {
+    .top p{
+        top: 160px;
+        right: 0;
+        font-size: 15px;
     }
 }

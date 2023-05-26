@@ -42,14 +42,16 @@
         <div class="card h-about">
           <ul class="left-card">
             <li>名前</li>
+            <li class="br-530">&nbsp;</li>
             <li>所属</li>
             <li class="br-1000">&nbsp;</li>
+            <li class="br-530">&nbsp;</li>
             <li>生年月日</li>
             <li>趣味</li>
           </ul>
           <ul class="right-card">
-            <li>住井奏太(すみいそうた)</li>
-            <li>早稲田大学創造理工学部<br class="br-1000">経営システム工学科 2年</li>
+            <li>住井奏太<br class="br-530">(すみいそうた)</li>
+            <li>早稲田大学創造理工<br class="br-530">学部<br class="br-1000-rm-530">経営システム<br class="br-530">工学科 2年</li>
             <li>2004年1月10日</li>
             <li>旅、勉強、寝ること</li>
           </ul>
@@ -67,14 +69,14 @@
         <p class="description">僕のインターン歴です！</p>
         <div class="card h-career">
           <ul class="left-card">
-            <li>22年1月～9月</li>
+            <li>22年1月<br class="br-530">～9月</li>
             <li class="br-1000">&nbsp;</li>
-            <li>23年2月～2月</li>
-            <li class="br-670">&nbsp;</li>
-            <li>23年2月～現在</li>
+            <li>23年2月<br class="br-530">～2月</li>
+            <li class="br-670-rm-530">&nbsp;</li>
+            <li>23年2月<br class="br-530">～現在</li>
           </ul>
           <ul class="right-card">
-            <li>グローバルパートナーズ<br class="br-1000">株式会社 インターン</li>
+            <li>グローバルパート<br class="br-530">ナーズ<br class="br-1000-rm-530">株式会社 <br class="br-530">インターン</li>
             <li>株式会社パブコ <br class="br-670">短期インターン</li>
             <li>株式会社ハートビーツ <br class="br-1000">インフラエンジニア</li>
           </ul>
@@ -89,7 +91,7 @@
       </div>
       <div class="contact pb-50" id="contact">
         <h1 class="title">Contact me</h1>
-        <p class="description">最後までご覧いただきありがとうございます！<br>もしコメントがありましたら<br class="br-670">下記フォームよりお問い合わせください。</p>
+        <p class="description">最後までご覧いただき<br class="br-530">ありがとうございます！<br>もしコメントがありましたら<br class="br-670">下記フォームより<br class="br-530">お問い合わせください。</p>
         <transition>
           <p v-show="alert" class="sent_mail">メールを送信しました</p>
         </transition>
