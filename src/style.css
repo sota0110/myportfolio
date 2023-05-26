@@ -15,27 +15,80 @@ header{
     z-index: 100;
 }
 
+.hamburger{
+    display: none;
+    width: 45px;
+    position: absolute;
+    top: 22px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.hamburger-line{
+    height: 4px;
+    background-color: #7FD857;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.close{
+    display: none;
+}
+
+.sp-nav {
+    z-index: 250;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all .2s ease-in-out;
+}
+
+.close{
+    display: block;
+    position: relative;
+    width: 75px;
+    height: 30px;
+    margin: 10px 20px 0 auto;
+}
+   
+.close::before, .close::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    width: 10px;
+    height: 60px;
+    background-color: #e0e0e0;
+}
+
+.close::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.close::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
 header img{
     width: 80px;
     margin: 20px 50px;
 }
 
-.header p{
-    font-size: 20px;
-    float: left;
-    margin-left: 20px;
-    line-height: 80px;
-    opacity: 0.8;
+.header-1000{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 100px;
 }
 
-header ul{
-    float: right;
-    margin-right: 100px;
-}
-
-header li{
+.header-1000 li{
     font-size: 16px;
-    float: left;
     margin-left: 30px;
     line-height: 80px;
     opacity: 0.8;
@@ -56,8 +109,8 @@ header li{
 
 .top p{
     position: absolute;
-    top: 330px;
-    left: 770px;
+    top: 310px;
+    right: 50px;
     font-size: 50px;
     color: #e1e1e1;
     list-style: 100px;
@@ -82,27 +135,21 @@ header li{
     background-color: rgba(173, 187, 181, 0.1);
     width: 80%;
     line-height: 35px;
-    padding-top: 15px;
+    padding: 15px 0;
     margin: auto;
-}
-
-.h-about{
-    height: 152px;
-}
-
-.h-career{
-    height: 117px;
+    display: inline-block;
 }
 
 .left-card{
     float: left;
-    width: 50%;
+    width: 40%;
+    list-style-position: inside;
 }
 
 .right-card{
     float: left;
     text-align: left;
-    width: 50%;
+    width: 60%;
 }
 
 a{
@@ -112,6 +159,10 @@ a{
 .contact form input, textarea{
     border: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.textarea{
+    width: 60%;
 }
 
 .contact form input:focus, textarea:focus{
@@ -161,8 +212,9 @@ footer{
 }
 
 footer h1{
+    padding: 40px 0;
     font-size: 100px;
-    line-height: 200px;
+    line-height: 120px;
     text-align: center;
 }
 
