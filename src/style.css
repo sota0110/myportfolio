@@ -17,7 +17,15 @@ header{
 
 header img{
     width: 80px;
-    padding: 20px 50px;
+    margin: 20px 50px;
+}
+
+.header p{
+    font-size: 20px;
+    float: left;
+    margin-left: 20px;
+    line-height: 80px;
+    opacity: 0.8;
 }
 
 header ul{
@@ -48,7 +56,7 @@ header li{
 
 .top p{
     position: absolute;
-    top: 300px;
+    top: 330px;
     left: 770px;
     font-size: 50px;
     color: #e1e1e1;
@@ -90,7 +98,49 @@ a{
     text-decoration:none;
 }
 
-.works{
+.contact form input, textarea{
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.contact form input:focus, textarea:focus{
+    outline: none;
+    border-bottom: 2px solid rgba(217, 255, 240);
+}
+
+.submit-btn{
+    background-color: rgba(217, 255, 240, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.sentMail{
+    font-size: 20px;
+    background-color: rgba(217, 255, 240, 0.8);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.v-leave-active, .v-enter-active {
+  transition: opacity 1s;
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
+
+.erase{
+    height: 0px;
+    width: 0px;
+}
+
+.back{
     background-color: rgba(217, 255, 240, 0.4);
 }
 

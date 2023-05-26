@@ -1,6 +1,8 @@
 <template>
   <header>
-    <img src="./assets/logo.png" alt="">
+    <a href="http://sota.starfree.jp/portfolio/">
+      <img src="./assets/logo.png" alt="">
+    </a>
     <ul>
       <li><a href="#top">top</a></li>
       <li><a href="#about">about me</a></li>
@@ -34,7 +36,7 @@
           </ul>
         </div>
       </div>
-      <div class="works mb-50" id="works">
+      <div class="works back mb-50" id="works">
         <h1 class="title">Works</h1>
         <template v-for="content in contents" :key="content">
           <WorksComp :img="content.img" :url="content.url" :title="content.title" class="work"/>
@@ -45,6 +47,29 @@
         <template v-for="graph in graphs" :key="graph">
           <Graph :skill="graph.skill" :number="graph.number" class="graph"/>
         </template>
+      </div>
+      <div class="career back mb-50">
+        <h1 class="title">Career</h1>
+
+      </div>
+      <div class="contact mb-50">
+        <h1 class="title">Contact me</h1>
+        <transition>
+          <p v-show="alert" class="sentMail">メールを送信しました</p>
+        </transition>
+        <form action="components/send-mail.php" target="form" method="post">
+          <p>Name</p>
+          <input type="text" v-model="name">
+          <p>Email</p>
+          <input type="email" v-model="email">
+          <p>Comment</p>
+          <textarea cols="60" rows="6" v-model="comment"></textarea><br>
+          <input type="submit" name="send" value="SEND" class="submit-btn" @click="sendMail">
+          <input type="text" name="name" v-model="sendName" class="erase">
+          <input type="email" name="email" v-model="sendEmail" class="erase">
+          <textarea name="comment" cols="60" rows="6" v-model="sendComment" class="erase"></textarea>
+        </form>
+        <iframe name="form" scrolling="no" frameborder="no" class="erase"></iframe>
       </div>
     </div>
   </main>
@@ -63,8 +88,39 @@ export default {
     WorksComp,
     Graph
   },
+  methods:{
+    sendMail(){
+      if(this.name == "" || this.email == "" || this.comment == ""){
+        alert("未入力の項目があります");
+        return false;
+      }
+      this.sendName = this.name;
+      this.sendEmail = this.email;
+      this.sendComment = this.comment;
+      this.name = "";
+      this.email = "";
+      this.comment = "";
+      this.alert = true;
+      document.form.submit();
+      return false;
+    }
+  },
+  watch: {
+    alert: function(){
+      setTimeout(() => {
+        this.alert = false;
+      }, 10000);
+    }
+  },
   data(){
     return{
+      name:"",
+      email:"",
+      comment:"",
+      sendName:"",
+      sendEmail:"",
+      sendComment:"",
+      alert:false,
       contents:[
         {
           title:"ちずアプリ",
