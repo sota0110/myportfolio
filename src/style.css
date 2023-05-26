@@ -4,7 +4,7 @@
     list-style: none;
     color: black;
     font-size: 20px;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", HGP創英丸ﾎﾟｯﾌﾟ体;
 }
 
 header{
@@ -30,7 +30,7 @@ header img{
 
 header ul{
     float: right;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 header li{
@@ -70,17 +70,28 @@ header li{
 }
 
 .title{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
+}
+
+.description{
+    margin-bottom: 10px;
 }
 
 .card{
     background-color: rgba(173, 187, 181, 0.1);
     width: 80%;
-    height: 150px;
     line-height: 35px;
-    padding-top: 10px;
+    padding-top: 15px;
     margin: auto;
+}
+
+.h-about{
+    height: 152px;
+}
+
+.h-career{
+    height: 117px;
 }
 
 .left-card{
@@ -119,7 +130,7 @@ a{
     cursor: pointer;
 }
 
-.sentMail{
+.sent_mail{
     font-size: 20px;
     background-color: rgba(217, 255, 240, 0.8);
     display: inline-block;
@@ -155,6 +166,6 @@ footer h1{
     text-align: center;
 }
 
-.mb-50{
-    margin-bottom: 50px;
+.pb-50{
+    padding-bottom: 50px;
 }

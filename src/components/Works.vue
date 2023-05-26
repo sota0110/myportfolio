@@ -1,7 +1,7 @@
 <template>
   <a :href="url" class="work-wrapper">
     <img :src="img" alt="">
-    <p>{{ title }}</p>
+    <p class="work_title">{{ title }}</p>
   </a>
 </template>
 
