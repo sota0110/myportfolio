@@ -120,12 +120,30 @@
     .card{
         width: 95%;
     }
+
+    footer{
+        height: 220px;
+    }
+    
+    footer h1{
+        padding: 10px 0;
+        font-size: 80px;
+        line-height: 100px;
+    }
 }
 
 @media (max-width: 450px) {
     .top p{
         top: 160px;
         right: 0;
-        font-size: 15px;
+        font-size: 20px;
+    }
+
+    .left-card{
+        width: 35%;
+    }
+
+    .right-card{
+        width: 65%;
     }
 }
