@@ -21,3 +21,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+components/
+composer.json
+composer.lock
+package-lock.json
+package.json
